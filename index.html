@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Canvas Designs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .canvas-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        canvas {
+            display: block;
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .canvas-label {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="canvas-container">
+        <div>
+            <canvas id="Canvas_Forma_Rectangular"></canvas>
+            <div class="canvas-label">Canvas Forma Rectangular</div>
+        </div>
+        <div>
+            <canvas id="Canvas_Path"></canvas>
+            <div class="canvas-label">Canvas Path</div>
+        </div>
+        <div>
+            <canvas id="Canvas_Mover_La_Pluma"></canvas>
+            <div class="canvas-label">Canvas Mover La Pluma</div>
+        </div>
+        <div>
+            <canvas id="Canvas_Lineas"></canvas>
+            <div class="canvas-label">Canvas Lineas</div>
+        </div>
+        <div>
+            <canvas id="Canvas_Arcos"></canvas>
+            <div class="canvas-label">Canvas Arcos</div>
+        </div>
+        <div>
+            <canvas id="Canvas_Curvas_Cuadraticas_Bézier"></canvas>
+            <div class="canvas-label">Canvas Curvas Cuadraticas Bézier</div>
+        </div>
+        <div>
+            <canvas id="Canvas_Curvas_Cubicas_Bézier"></canvas>
+            <div class="canvas-label">Canvas Curvas Cubicas Bézier</div>
+        </div>
+        <div>
+            <canvas id="Canvas_Combinaciones"></canvas>
+            <div class="canvas-label">Canvas Combinaciones</div>
+        </div>
+        <div>
+            <canvas id="Canvas_Formas_y_Agujeros"></canvas>
+            <div class="canvas-label">Canvas Formas y Agujeros</div>
+        </div>
+        <div>
+            <canvas id="Canvas_Path_2D"></canvas>
+            <div class="canvas-label">Canvas Path 2D</div>
+        </div>
+    </div>
+
     <script src="/js/main.js"></script>
 </body>
+
 </html>
